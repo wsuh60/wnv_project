@@ -10,18 +10,16 @@ Due to the recent epidemic of West Nile Virus in the Windy City, we've had the D
 
 The dataset, along with description, can be found here: [https://www.kaggle.com/c/predict-west-nile-virus/](https://www.kaggle.com/c/predict-west-nile-virus/).
 
-**This is also where you will be submitting your code for evaluation**. We will be using the Kaggle Leaderboard to keep track of your score. The leaderboard uses roughly 30% of the dataset to score an AUC (Area Under Curve) metric. [You can read more about the scoring metric here](https://www.kaggle.com/wiki/AreaUnderCurve).
+**This is also where you will be submitting your code for evaluation**. We will be using the Kaggle Leaderboard to keep track of your score. The public leaderboard uses roughly 30% of the dataset to score an AUC (Area Under Curve) metric. [You can read more about the scoring metric here](https://www.kaggle.com/wiki/AreaUnderCurve).
+
+> If you do not already have a Kaggle account, you will need to sign up on the website.  Also note that you will be submitting a "Late Submission" on Kaggle because the official competition has ended.  You can use the leaderboard to see how your results compare against roughly 1300 other data science teams!
+
+You can submit predictions as many times as you want to Kaggle, but there is a limit of 5 submissions per day.  Be intentional with your submissions!
 
 
-#### Group Project Recommendations
+#### Navigating Group Work
 
-This project will be executed as a group.
-- Set up a GitHub repository.
-- Create a Trello board/a Google sheet with tasks assigned to individual members of your team to keep the project organized. (Please tag whoever in your team is taking the lead on any part.)
-- Brainstorm a project roadmap.
-- Explore the data.
-- Produce a model and make predictions for where the Department of Public Health should be spraying.
-- Submit your predictions to Kaggle and get an AUC score.  You can submit these as many times as you want to Kaggle, but there is a limit of 5 submissions per day.  Be intentional with your submissions!
+This project will be executed as a group.  To make your team as effective and efficient as possible you should do the create a shared GitHub repo and project planning document as described in the deliverables section below.
 
 ## Deliverables
 
@@ -59,20 +57,7 @@ This project will be executed as a group.
 
 **Your project is due at 10:00 AM EST/9:00 AM CST on Friday, March 9.**
 
-### **Competition Evaluation**
-
-The Kaggle competition should be evaluated on the following 4 points:
-
-1. **AUC Scoring**: A clear winning group will be determined based on the AUC Scoring performed by the Kaggle Leaderboard. This is not to say that the winning group's work was the best submission. Remember, just hitting a benchmark is not enough to determine success; the following points are just as important if not more so.
-
-2. **Clearly documented observations**: Students should have some log, whether it is a markdown file, text file, or iPython notebook, describing the observations and decisions they made along the way. This should be submitted to your instructor prior to your final presentation.
-
-3. **Code**: All of your models, pipelines, cleaning techniques, and transformations should be properly coded and documented. Syntax is important, as data scientists are often tasked with building products that will be collaborated upon or maintained by other engineers. It is also important that no mistakes were made while pipelining data. If any data points were corrupted, the results are useless.
-
-4. **Presentation**: Your presentation is expected to be client facing. Describe your data and approach as if your client is in front of you. This includes explaining the decisions made, the means by which you evaluated your decisions, and visualizations to support the story you are telling. This is a storytelling exercise, so be sure to set up, explain, and summarize your work clearly.
-
 ---
-
 
 ### Project Feedback + Evaluation
 
