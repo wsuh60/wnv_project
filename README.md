@@ -67,7 +67,7 @@ Score | Expectations
 ----- | ------------
 **0** | _Does not meet expectations. Try again._
 **1** | _Approaching expectations. Getting there..._
-**2** | _Meets expecations. Great job._
+**2** | _Meets expectations. Great job._
 **3** | _Surpasses expectations. Brilliant!_
 
 ### Rubric
