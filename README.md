@@ -55,7 +55,7 @@ This project will be executed as a group.  To make your team as effective and ef
 
 ---
 
-**Your project is due at 10:00 AM EST/9:00 AM CST on Friday, June 15.**
+**Your project is due at 10:00 AM EST/9:00 AM CST on Friday, September 21.**
 
 ---
 
