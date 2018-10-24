@@ -21,24 +21,24 @@ WNV also affects some species of birds, horses, and small mammals. Although, mos
 
 One of the most challenging aspects about this project was the huge class imbalances and merging different datasets together. We also had to feature engineer weather related data with different rolling time frames. Another interesting aspect related to this project was working with coordinate grids. We used a package called Vincenty to calculate distances between spray locations and trap data. We also used utils from sklearn.utils package for addressing class imbalances. The coordinate grids allowed us to plot incidents where WNV was present and see if spraying impacted WNV outbreaks. 
 
-<THIS IS THE MAP>
+<img src = "https://github.com/wsuh60/wnv_project/blob/master/Assets/map.png">
 
 The map shows trap locations where WNV was present or not present. Despite the spray location in green, WNV was still present.
 
 
-<THIS IS THE MOSQUITO TYPES>
+<img src = "https://github.com/wsuh60/wnv_project/blob/master/Assets/mosquitoes.png">
 
 Not all mosquitoes are vectors. The type of mosquitoes we want to target are culex pipiens/restuans and culex pipiens, and culex resuans. 
 
-<THIS IS THE TIME CHART>
+<img src = "https://github.com/wsuh60/wnv_project/blob/master/Assets/time%20chart.png">
     
 We also discovered that WNV is the most prevalent during August/September.
 
-<THIS IS THE WETBULB & TAVG CHART> 
+<img src = "https://github.com/wsuh60/wnv_project/blob/master/Assets/Wetbulb%20avgTemp.png"> 
 
 We discovered two correlating factors. One was the wetbulb temperature. The wet-bulb temperature is the temperature read by a thermometer covered in water-soaked cloth over which air is passed. 
 
-<THIS IS THE DEWPOINT and TAVG CHART>
+<img src = "https://github.com/wsuh60/wnv_project/blob/master/Assets/Dewpoint%20avgTemp.png">
 
 We discovered two correlating factors. The second was the dewpoint temperature. The Dew Point is the temperature where water vapor starts to condense out of the air.
 
@@ -46,23 +46,24 @@ We discovered two correlating factors. The second was the dewpoint temperature. 
 
 Since we want to reduce the number of false negative rates, we need a model that is optimized for sensitivity. Our group decided that missing false negative incidents would cause greater harm than false positives. We ran our data through Random Forest, XGBoost, AdaBoost, and Logistic Regression models. Even though our accuracy score using XGBoost was the best, its sensitivity score was not as good as the AdaBoost model. Thus, the model of choice in this particular situation was AdaBoost.
 
-<THIS IS THE LOG REG AUROC>
+<img src = "https://github.com/wsuh60/wnv_project/blob/master/Assets/LogReg%20AUROC.png">
 The two most important features were the average temperature and wet_temp. Wet_temp was a feature engineered column that multiplies the daily precipitation by the daily average temperature. The AUROC scored .72.
     
-<THIS IS THE LOG REG MATRIX>
+<img src = "https://github.com/wsuh60/wnv_project/blob/master/Assets/LogReg%20Matrix.png">
     
 There are 48 false negatives and the accuracy score was 0.66. At this stage, we weren't sure if it could get lower so we decided to try more complex models.
 
-<THIS IS RF AUROC>
+<img src = "https://github.com/wsuh60/wnv_project/blob/master/Assets/RF%20AUROC%20Chart.png">
 For the random forest model, the most important topics were week and month. The model's AUROC scored .75.
     
-<THIS IS RF MATRIX>
+<img src = "https://github.com/wsuh60/wnv_project/blob/master/Assets/RF%20Matrix.png">
 The false negatives for the random forest model increased to 86. The accuracy score was 0.88. Since we were most concerned with lowering the false negative rates, this model performed worse than the logistic regression.
     
-<THIS IS XG BOOST>
+<img src = "https://github.com/wsuh60/wnv_project/blob/master/Assets/xg%20boost%20matrix.png">
 The accuracy score is .88 but there are 91 false negatives. This performed worse than the random forest model.
     
-<THIS IS ADA BOOST>
+<img src = "https://github.com/wsuh60/wnv_project/blob/master/Assets/Adaboost%20AUROC.png">
+<img src = "https://github.com/wsuh60/wnv_project/blob/master/Assets/Adaboost%20Matrix.png">
 AdaBoost has an accuracy score of 0.75 but has the lowest number of false positives (38). We chose this model since we were most interested in lowering the number of false negatives.
 
 
